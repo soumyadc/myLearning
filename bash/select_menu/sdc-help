@@ -1,0 +1,27 @@
+#!/bin/bash
+
+SRC_DIR=/usr/bin
+PS3="Select a file to run: "
+
+FILE_LIST=(`ls $SRC_DIR/`)
+
+echo "No of  elements ${#FILE_LIST[@]}"
+
+#LS_OUTPUT=`ls $SRC_DIR`
+#OPTIONS=$LS_OUTPUT
+#select OPT in $OPTIONS "exit"
+select OPT in ${FILE_LIST[@]} "exit"
+do
+	case $OPT in
+		"exit")
+			exit
+			;;
+		$OPT )
+			echo "You have selected $OPT"
+			;;
+
+		*) 
+			echo "Invalid Option Selected!"
+			;;
+	esac	
+done

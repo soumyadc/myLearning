@@ -1,0 +1,8 @@
+#!/bin/bash
+
+VAR="Welcome to this string example"
+
+#Print the strlen
+echo "String Length: ${#VAR}"
+
+echo ${var:10:4}

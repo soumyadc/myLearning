@@ -1,0 +1,12 @@
+#!/bin/bash
+
+select OPT in 1 2 3 4 5
+do
+	case $OPT in 
+		1)
+			echo "hello";;
+		*)
+			echo "wrong option";;
+	esac
+done
+
