@@ -1,0 +1,4 @@
+total 8
+-rwxrwxr-x 1 soumyadc soumyadc 909 Apr  8 00:41 bash.py
+-rw-rw-r-- 1 soumyadc soumyadc   0 Apr  8 00:41 out.txt
+-rwxrwxr-x 1 soumyadc soumyadc  62 Apr  7 02:37 test.sh
