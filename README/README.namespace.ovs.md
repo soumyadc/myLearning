@@ -53,3 +53,11 @@ tap-r is no more visible to root-ns but still visible to ovs
         ovs-vsctl list bridge
         ovs-vsctl list interface
         ovs-vsctl list port
+
+
+
+
+
+# References:
+
+- (http://www.opencloudblog.com/?p=66)
