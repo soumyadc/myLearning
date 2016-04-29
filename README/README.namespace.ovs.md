@@ -59,5 +59,5 @@ tap-r is no more visible to root-ns but still visible to ovs
 
 
 # References:
-
-- (http://www.opencloudblog.com/?p=66)
+- [network namespace commands](http://www.opencloudblog.com/?p=42)
+- [network namespaces, connection setup examples](http://www.opencloudblog.com/?p=66)
