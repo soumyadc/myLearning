@@ -66,10 +66,13 @@ it will remove all the latest commits after the specified SHA. and the SHA becom
 
 ### create a new branch from current branch
     git branch <new branch name>
+    git branch <branchname> [<start-point>]
+    
 at this point the current branch and the new_branch have the same code and same number of commits. they are identical at this point.
 
 ### switched to the newly created branch
     git checkout <branch name>
+    git checkout -b <new_branch> [<start_point>]
 
 ### merging branch to master
     git checkout master
