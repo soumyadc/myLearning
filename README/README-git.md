@@ -165,6 +165,51 @@ merge request and accept it. once accepted this get merged to the remote master 
 
 
 
+# Advance Some other Branch related commands
+
+git remote add <remote_ref name> <url>
+
+git push <remote_ref> <local_branch>:<remote_branch>
+
+remote_ref == origin
+
+git fetch <remote_ref>
+
+git merge <remote_ref>/<remote_branch>
+or
+git checkout -b <local_brance> <remote_ref/remote_branch> <<<<create a local branch from the remote_ref branch
+ex:
+git checkout -b myLocalBr myTeam/remote_br
+
+tracking branch (myLocalBr)
+upstream branch (upstream br from remote ref myTeam repo)
+
+$ git checkout --track origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+or shortcut
+$ git checkout serverfix
+
+
+# To change the upstream ref for my local branch myLocalBr use -u option
+$ git checkout myLocalBr
+$ git branch -u origin/SomeBranch
+
+$ git branch -vv
+  iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+  master    1ae2a45 [origin/master] deploying index fix
+* serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
+  testing   5ea463a trying something new
+
+
+
+git branch <branchname> [<start-point>]
+$ git push origin --delete serverfix
+
+
+
+
+
 
 
 
