@@ -1,6 +1,6 @@
 # Basic of GIT
 
-### git init
+    git init
 Initilizes and empty reposity (local)
 
 A git project has 3 parts
@@ -12,10 +12,10 @@ Typical git workflow
 edit files in 'working directory' -> adding file to the 'staging area' -> save/commit changes to repository
 
 
-### git status
+    git status
 show the current status of the current changes
 
-### git add <filename>
+    git add <filename>
 git will start tracking the changes in the file. add it to the staging area
 
 I can call git add multiple times, each after every changes done to my file.
@@ -25,10 +25,10 @@ git diff only shows diff between the stanged file and the current file.
 
 i.e. If I have made any changes after staging those changes alone shown in git diff
 
-### git commit -m "<commit message>"
+    git commit -m "<commit message>"
 save the changes in the repository
 
-### git log
+    git log
 It shows the history of all the commits
 
 - A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
@@ -41,19 +41,19 @@ It shows the history of all the commits
 # Back Tracking your repository
 When working on a Git project, sometimes we make changes that we want to get rid of. Git offers a few eraser-like features that allow us to undo mistakes during project creation.
 
-### git show HEAD
+    git show HEAD
 most recently done commit is known as HEAD commit.
 git show HEAD displays the last commited changes
 
-### git checkout HEAD <filename>
+    git checkout HEAD <filename>
 If some changes are made in the file and you want to revert it back to the original HEAD version, use git checkout HEAD
 
 
-### git reset HEAD <file>
+    git reset HEAD <file>
 if you want to unstage a file from the staging area
 
 
-### git reset SHA(only first 7 digit of SHA is mandatory)
+    git reset SHA(only first 7 digit of SHA is mandatory)
 If you want to remove some commits from repository use git reset.
 it will remove all the latest commits after the specified SHA. and the SHA become your current HEAD
 
@@ -62,6 +62,7 @@ it will remove all the latest commits after the specified SHA. and the SHA becom
 # git branching
 
 ### show your current working branch
+
     git branch
 
 ### create a new branch from current branch
@@ -71,10 +72,12 @@ it will remove all the latest commits after the specified SHA. and the SHA becom
 at this point the current branch and the new_branch have the same code and same number of commits. they are identical at this point.
 
 ### switched to the newly created branch
+
     git checkout <branch name>
     git checkout -b <new_branch> [<start_point>]
 
 ### merging branch to master
+
     git checkout master
     git merge <branch_name>
 
