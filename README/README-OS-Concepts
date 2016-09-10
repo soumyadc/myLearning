@@ -1,0 +1,6 @@
+# Mutex and Semaphore:
+Mutual exclusive lock.
+if a critical section is locked with mutex then only one thread can entered into that critical section at any given point of time.
+But it doesnot tell which thread can come first or later, it cannot dictate the order of thread execution on that critical section.
+
+This can be done via semaphore.
