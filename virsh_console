@@ -1,0 +1,4 @@
+Steps to enable the console in a linux VM:
+Give the following command in the VM terminal (using virt-viewer)
+1.	systemctl enable serial-getty@ttyS0.service
+2.	systemctl start serial-getty@ttyS0.service
