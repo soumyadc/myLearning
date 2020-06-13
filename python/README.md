@@ -28,9 +28,8 @@ del dict['key']
 delete a key-value pair from the dictionary
 
 dict.keys()
-```
+
 for key in dict:
     print key
     value= dict[key]
     print value
-```
